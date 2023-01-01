@@ -11,10 +11,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: install arm64-to-sim
-      run: git clone https://github.com/bogo/arm64-to-sim.git && \ 
-           cd arm64-to-sim && \ 
-           swift build -c release --arch arm64 --arch x86_64 && \
-           cp .build/apple/Products/Release/arm64-to-sim /usr/local/bin/
+      run: | 
+        git clone https://github.com/bogo/arm64-to-sim.git
+        cd arm64-to-sim
+        swift build -c release --arch arm64 --arch x86_64
+        cp .build/apple/Products/Release/arm64-to-sim /usr/local/bin/
     - name: Build
       run: ls && source build.sh
     - name: Upload binaries to release
