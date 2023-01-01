@@ -29,6 +29,7 @@ function process {
     rm -rf $OUTPUT_PATH/*
 
     xcodebuild -create-xcframework -framework $L_PATH/iphone-os/AlipaySDK.framework -framework $L_PATH/iphone-sim/AlipaySDK.framework -output $OUTPUT_PATH/AlipaySDK.xcframework
+    cp -r $L_PATH/AlipaySDK.bundle $OUTPUT_PATH
     zip -r $OUTPUT_PATH.zip $OUTPUT_PATH 
 }
 
