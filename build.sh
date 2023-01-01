@@ -1,9 +1,9 @@
-# curl https://gw.alipayobjects.com/os/bmw-prod/9e8d0874-56d7-41fd-aaf5-f5e6edfec8fe.zip -o alipay.zip
-# unzip alipay.zip -d alipay-standard
+curl https://gw.alipayobjects.com/os/bmw-prod/9e8d0874-56d7-41fd-aaf5-f5e6edfec8fe.zip -o alipay.zip
+unzip alipay.zip -d alipay-standard
 
 
-# curl https://gw.alipayobjects.com/os/bmw-prod/f50bde0b-252a-4234-bf0a-f84ec2d4be2e.zip -o alipay-noutdid.zip
-# unzip alipay-noutdid.zip -d alipay-noutdid
+curl https://gw.alipayobjects.com/os/bmw-prod/f50bde0b-252a-4234-bf0a-f84ec2d4be2e.zip -o alipay-noutdid.zip
+unzip alipay-noutdid.zip -d alipay-noutdid
 
 
 function process {
